@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "727543581426",
+    "project_id": "adminkabirstore",
+    "storage_bucket": "adminkabirstore.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727543581426:android:d40d553a05dde68e9e5e6b",
+        "android_client_info": {
+          "package_name": "com.example.adminkabirstore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEf-Ql-g6RJxGQOgbTQtW6hf9Qb3ubJrM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Admin Kabir Store</string>
+    <string name="kabir_imitation_and_jewellery">Kabir Imitation Jewellery &amp; \nCosmetics</string>
+    <string name="experience_the_beauty_within">Experience the <b>Beauty within</b></string>
+    <string name="design_by_nsk_brothers">Design By\n<b>Sk Brothers</b></string>
+    <string name="login_to_your_account">Login To Your\nAdmin Dashboard</string>
+    <string name="email_or_phone_number">Email or Phone Number</string>
+    <string name="password">Password</string>
+    <string name="or">or</string>
+    <string name="continue_with">Continue With</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Sign in with Google</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_account">Don\'t Have Account?</string>
+    <string name="sign_up_here">Sign Up Here</string>
+    <string name="name">Name</string>
+    <string name="create_account">Create Account</string>
+    <string name="already_have_an_account">Already Have An Account?</string>
+    <string name="next">Next</string>
+    <string name="makeup_is_art_amp_nbeauty_is_spirit"><![CDATA[Makeup Is Art &\nbeauty is spirit]]></string>
+    <string name="to_provide_you_with_the_best_cosmetics_amp_jewellery_products_we_need_your_permission_to_access_your_device_location"><![CDATA[To provide you with the best cosmetics & jewellery products, we need your permission to access your device location .]]></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Home blank fragment</string>
+    <string name="admin_dashboard">Admin Dashboard</string>
+    <string name="default_web_client_id">727543581426-pk2r0n41ok1e9ch2i65ikedd6bm66jlh.apps.googleusercontent.com</string>
+
+    <string name="title_internet">Internet Connection</string>
+    <string name="content_internet">Please check internet connection!</string>
+</resources>

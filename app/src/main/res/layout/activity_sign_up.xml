@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/app_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SignUpActivity">
+
+    <View
+        android:id="@+id/overlayView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80FFFFFF"
+        android:visibility="gone"
+        android:elevation="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:elevation="15dp"
+        android:indeterminateDuration="1000"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/main_logo" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/latobold"
+        android:letterSpacing="0.1"
+        android:lineHeight="30dp"
+        android:text="@string/kabir_imitation_and_jewellery"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/latobold"
+        android:text="Sign up Here"
+        android:textAlignment="center"
+        android:textColor="@color/lavenderDark"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
+    <EditText
+        android:id="@+id/userNameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_background"
+        android:drawableStart="@drawable/user_02"
+        android:drawablePadding="10dp"
+        android:elevation="10dp"
+        android:ems="10"
+        android:fontFamily="@font/latoregular"
+        android:hint="Owner Name"
+        android:inputType="text"
+        android:paddingVertical="12dp"
+        android:paddingStart="14dp"
+        android:textSize="14sp"
+
+        app:layout_constraintEnd_toEndOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <EditText
+        android:id="@+id/nameOfShopEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:background="@drawable/edit_text_background"
+        android:drawableStart="@drawable/user_02"
+        android:drawablePadding="10dp"
+        android:elevation="10dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:fontFamily="@font/latoregular"
+        android:hint="Shop Name"
+        android:inputType="text"
+        android:paddingVertical="12dp"
+        android:paddingStart="14dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/userNameEt"
+        app:layout_constraintStart_toStartOf="@+id/userNameEt"
+        app:layout_constraintTop_toBottomOf="@+id/userNameEt" />
+
+    <EditText
+        android:id="@+id/emailOrPhoneEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_background"
+        android:drawableStart="@drawable/mail_02"
+        android:drawablePadding="10dp"
+        android:elevation="10dp"
+        android:ems="10"
+        android:fontFamily="@font/latoregular"
+        android:hint="@string/email_or_phone_number"
+        android:inputType="textEmailAddress"
+        android:paddingVertical="12dp"
+        android:paddingStart="14dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/nameOfShopEt"
+        app:layout_constraintStart_toStartOf="@+id/nameOfShopEt"
+        app:layout_constraintTop_toBottomOf="@+id/nameOfShopEt" />
+
+<!--    <EditText-->
+<!--        android:id="@+id/passwordEt"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginHorizontal="25dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:background="@drawable/edit_text_background"-->
+<!--        android:drawableStart="@drawable/lock_01"-->
+<!--        android:drawablePadding="10dp"-->
+<!--        android:elevation="10dp"-->
+<!--        android:ems="10"-->
+<!--        android:fontFamily="@font/latoregular"-->
+<!--        android:hint="@string/password"-->
+<!--        android:inputType="textPassword"-->
+<!--        android:paddingVertical="12dp"-->
+<!--        android:paddingStart="14dp"-->
+<!--        android:textSize="14sp"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/emailOrPhoneEt"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/emailOrPhoneEt"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/emailOrPhoneEt" />-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTextInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/emailOrPhoneEt"
+        app:layout_constraintStart_toStartOf="@+id/emailOrPhoneEt"
+        app:layout_constraintTop_toBottomOf="@+id/emailOrPhoneEt"
+        app:passwordToggleEnabled="true"
+        android:layout_marginHorizontal="25dp"
+        android:elevation="10dp"
+        android:textColorHint="@color/black"
+        android:outlineSpotShadowColor="@color/black"
+        android:layout_marginTop="16dp"
+        app:boxBackgroundMode="none"
+        android:background="@drawable/edit_text_background"
+        app:hintEnabled="false">
+
+        <EditText
+            android:id="@+id/passwordEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/lock_01"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:fontFamily="@font/latoregular"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingVertical="12dp"
+            android:paddingStart="14dp"
+            android:textSize="14sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/createUserBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/login_btn_shape"
+        android:elevation="10dp"
+        android:paddingHorizontal="60dp"
+        android:text="@string/create_account"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/passwordTextInput"
+        app:layout_constraintStart_toStartOf="@+id/passwordTextInput"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTextInput" />
+
+    <TextView
+        android:id="@+id/alreadyAccountTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/already_have_an_account"
+        android:textColor="@color/lavenderDark"
+        app:layout_constraintEnd_toEndOf="@+id/createUserBtn"
+        app:layout_constraintStart_toStartOf="@+id/createUserBtn"
+        app:layout_constraintTop_toBottomOf="@+id/createUserBtn" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/latolight"
+        android:text="@string/design_by_nsk_brothers"
+        android:textAlignment="center"
+        android:textColor="@color/lavenderDark"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
